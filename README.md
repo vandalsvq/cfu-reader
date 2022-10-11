@@ -1,5 +1,5 @@
 # Обработка для просмотра содержимого cfu-файлов в режиме 1С: Предприятие
-![Платформа 1С](https://img.shields.io/badge/1с_platform-8.3.14.1208-yellow.svg)
+![Платформа 1С](https://img.shields.io/badge/1с_platform-8.3.18.1208-yellow.svg)
 [![GitHub release](https://img.shields.io/github/release/vandalsvq/cfu-reader.svg)](https://github.com/vandalsvq/cfu-reader/releases)
 
 Обработка для анализа файлов .cfu в режиме предприятия в любой конфигурации для 1С 8.3.+. Основана на разработке [CFU-reader](https://infostart.ru/public/97194/) [Андрей Д.](https://infostart.ru/profile/128365/) Многое из его обработки было использовано мною. 
