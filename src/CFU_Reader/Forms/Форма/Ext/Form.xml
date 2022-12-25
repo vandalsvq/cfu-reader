@@ -48,7 +48,7 @@
 			<ExtendedTooltip name="ГруппаПутьКФайлуCFUКаталогРаспаковкиРасширеннаяПодсказка" id="5"/>
 			<ChildItems>
 				<InputField name="ПутьКФайлуCFU" id="1">
-					<DataPath>Объект.ПутьКФайлуCFU</DataPath>
+					<DataPath>Объект.ПутьКФайлу</DataPath>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ChoiceButton>true</ChoiceButton>
 					<TextEdit>false</TextEdit>
@@ -129,7 +129,7 @@
 									<Representation>Tree</Representation>
 									<ReadOnly>true</ReadOnly>
 									<ChangeRowSet>false</ChangeRowSet>
-									<Width>30</Width>
+									<Width>15</Width>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
@@ -245,7 +245,7 @@
 											<v8:content>Группа отображение данных</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Width>60</Width>
+									<Width>30</Width>
 									<PagesRepresentation>None</PagesRepresentation>
 									<ExtendedTooltip name="ГруппаОтображениеДанныхРасширеннаяПодсказка" id="298"/>
 									<ChildItems>
@@ -267,6 +267,7 @@
 												<HTMLDocumentField name="ДокументHTML" id="299">
 													<DataPath>ДокументHTML</DataPath>
 													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
 													<ContextMenu name="ДокументHTMLКонтекстноеМеню" id="300"/>
 													<ExtendedTooltip name="ДокументHTMLРасширеннаяПодсказка" id="301"/>
 												</HTMLDocumentField>
@@ -290,6 +291,7 @@
 												<TextDocumentField name="ТекстовыйДокумент" id="294">
 													<DataPath>ТекстовыйДокумент</DataPath>
 													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
 													<ContextMenu name="ТекстовыйДокументКонтекстноеМеню" id="295"/>
 													<ExtendedTooltip name="ТекстовыйДокументРасширеннаяПодсказка" id="296"/>
 												</TextDocumentField>
@@ -313,6 +315,7 @@
 												<PictureField name="ХранилищеКартинки" id="318">
 													<DataPath>ХранилищеКартинки</DataPath>
 													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ХранилищеКартинкиКонтекстноеМеню" id="319"/>
 													<ExtendedTooltip name="ХранилищеКартинкиРасширеннаяПодсказка" id="320"/>
@@ -337,6 +340,7 @@
 												<SpreadSheetDocumentField name="ТабличныйДокумент" id="335">
 													<DataPath>ТабличныйДокумент</DataPath>
 													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
 													<ContextMenu name="ТабличныйДокументКонтекстноеМеню" id="336"/>
 													<ExtendedTooltip name="ТабличныйДокументРасширеннаяПодсказка" id="337"/>
 												</SpreadSheetDocumentField>
@@ -360,9 +364,124 @@
 												<GraphicalSchemaField name="ГрафическаяСхема" id="340">
 													<DataPath>ГрафическаяСхема</DataPath>
 													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
 													<ContextMenu name="ГрафическаяСхемаКонтекстноеМеню" id="341"/>
 													<ExtendedTooltip name="ГрафическаяСхемаРасширеннаяПодсказка" id="342"/>
 												</GraphicalSchemaField>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаКонсольКода" id="490">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа консоль кода</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа консоль кода</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаКонсольКодаРасширеннаяПодсказка" id="491"/>
+											<ChildItems>
+												<CommandBar name="КоманднаяПанельКонсольКода" id="495">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Командная панель консоль кода</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Командная панель консоль кода</v8:content>
+														</v8:item>
+													</ToolTip>
+													<ExtendedTooltip name="КоманднаяПанельКонсольКодаРасширеннаяПодсказка" id="496"/>
+													<ChildItems>
+														<Popup name="Тема" id="497">
+															<Enabled>false</Enabled>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Тема</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Тема</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="498"/>
+															<ChildItems>
+																<Button name="СветлаяТема" id="499">
+																	<Type>CommandBarButton</Type>
+																	<CommandName>Form.Command.СветлаяТема</CommandName>
+																	<ExtendedTooltip name="СветлаяТемаРасширеннаяПодсказка" id="500"/>
+																</Button>
+																<Button name="ТемнаяТема" id="501">
+																	<Type>CommandBarButton</Type>
+																	<CommandName>Form.Command.ТемнаяТема</CommandName>
+																	<ExtendedTooltip name="ТемнаяТемаРасширеннаяПодсказка" id="502"/>
+																</Button>
+															</ChildItems>
+														</Popup>
+														<ButtonGroup name="Оформление" id="503">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Оформление</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Оформление</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Representation>Compact</Representation>
+															<ExtendedTooltip name="ОформлениеРасширеннаяПодсказка" id="504"/>
+															<ChildItems>
+																<Button name="ПодсвечиватьЗапросы" id="505">
+																	<Type>CommandBarButton</Type>
+																	<Enabled>false</Enabled>
+																	<CommandName>Form.Command.ПодсвечиватьЗапросы</CommandName>
+																	<ExtendedTooltip name="ПодсвечиватьЗапросыРасширеннаяПодсказка" id="506"/>
+																</Button>
+																<Button name="КартаКода" id="507">
+																	<Type>CommandBarButton</Type>
+																	<Enabled>false</Enabled>
+																	<Check>true</Check>
+																	<CommandName>Form.Command.КартаКода</CommandName>
+																	<ExtendedTooltip name="КартаКодаРасширеннаяПодсказка" id="508"/>
+																</Button>
+																<Button name="ОтображатьПробелыИТабуляции" id="509">
+																	<Type>CommandBarButton</Type>
+																	<CommandName>Form.Command.ОтображатьПробелыИТабуляции</CommandName>
+																	<ExtendedTooltip name="ОтображатьПробелыИТабуляцииРасширеннаяПодсказка" id="510"/>
+																</Button>
+															</ChildItems>
+														</ButtonGroup>
+														<Button name="СтрокаСостояния" id="511">
+															<Type>CommandBarButton</Type>
+															<Enabled>false</Enabled>
+															<CommandName>Form.Command.СтрокаСостояния</CommandName>
+															<ExtendedTooltip name="СтрокаСостоянияРасширеннаяПодсказка" id="512"/>
+														</Button>
+													</ChildItems>
+												</CommandBar>
+												<HTMLDocumentField name="ТекстHTML" id="492">
+													<DataPath>ТекстHTML</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>40</Width>
+													<ContextMenu name="ТекстHTMLКонтекстноеМеню" id="493"/>
+													<ExtendedTooltip name="ТекстHTMLРасширеннаяПодсказка" id="494"/>
+													<Events>
+														<Event name="DocumentComplete">ТекстHTMLДокументСформирован</Event>
+													</Events>
+												</HTMLDocumentField>
 											</ChildItems>
 										</Page>
 									</ChildItems>
@@ -497,6 +616,7 @@
 									<v8:content>Страницы таблица метаданных</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Width>80</Width>
 							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="СтраницыТаблицаМетаданныхРасширеннаяПодсказка" id="93"/>
 							<ChildItems>
@@ -513,6 +633,7 @@
 											<v8:content>Страница расширения</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокРасширения</TitleDataPath>
 									<ExtendedTooltip name="СтраницаРасширенияРасширеннаяПодсказка" id="95"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхРасширения" id="60">
@@ -632,6 +753,7 @@
 											<v8:content>Страница измерения</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокИзмерения</TitleDataPath>
 									<ExtendedTooltip name="СтраницаИзмеренияРасширеннаяПодсказка" id="395"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхИзмерения" id="396">
@@ -708,6 +830,7 @@
 											<v8:content>Страница ресурсы</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокРесурсы</TitleDataPath>
 									<ExtendedTooltip name="СтраницаРесурсыРасширеннаяПодсказка" id="419"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхРесурсы" id="420">
@@ -784,6 +907,7 @@
 											<v8:content>Страница реквизиты</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокРеквизиты</TitleDataPath>
 									<ExtendedTooltip name="СтраницаРеквизитыРасширеннаяПодсказка" id="344"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхРеквизиты" id="345">
@@ -860,6 +984,7 @@
 											<v8:content>Страница табличные части</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокТабличныеЧасти</TitleDataPath>
 									<ExtendedTooltip name="СтраницаТабличныеЧастиРасширеннаяПодсказка" id="443"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаТабЧастиГоризонтальная" id="466">
@@ -1018,6 +1143,7 @@
 											<v8:content>Страница значения</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокЗначения</TitleDataPath>
 									<ExtendedTooltip name="СтраницаЗначенияРасширеннаяПодсказка" id="368"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхЗначения" id="369">
@@ -1094,6 +1220,7 @@
 											<v8:content>Страница формы</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокФормы</TitleDataPath>
 									<ExtendedTooltip name="СтраницаФормыРасширеннаяПодсказка" id="100"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхФормы" id="101">
@@ -1200,6 +1327,7 @@
 											<v8:content>Страница макеты</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокМакеты</TitleDataPath>
 									<ExtendedTooltip name="СтраницаМакетыРасширеннаяПодсказка" id="133"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхМакеты" id="134">
@@ -1300,6 +1428,7 @@
 											<v8:content>Страница команды</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокКоманды</TitleDataPath>
 									<ExtendedTooltip name="СтраницаКомандыРасширеннаяПодсказка" id="163"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхКоманды" id="164">
@@ -1400,6 +1529,7 @@
 											<v8:content>Страница перерасчеты</v8:content>
 										</v8:item>
 									</ToolTip>
+									<TitleDataPath>ЗаголовокПерерасчеты</TitleDataPath>
 									<ExtendedTooltip name="СтраницаПерерасчетыРасширеннаяПодсказка" id="202"/>
 									<ChildItems>
 										<Table name="ТаблицаМетаданныхПерерасчеты" id="203">
@@ -1607,7 +1737,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.ОбработкаЧтенияCFU</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОбработкаЧтенияCFU_E</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
@@ -1774,6 +1904,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="ЭтоТекстМодуля" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это текст модуля</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ПутьКUnpackV8" id="3">
@@ -1781,21 +1922,6 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Путь к unpack v8</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="Путьzlib1" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Путьzlib1</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -3173,6 +3299,312 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭтоФайлОбновления" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это файл обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоФайлРасширения" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это файл расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокРасширения" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок расширения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокИзмерения" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок измерения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокРесурсы" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок ресурсы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокРеквизиты" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокТабличныеЧасти" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок табличные части</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокФормы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок формы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокМакеты" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок макеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокКоманды" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок команды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокПерерасчеты" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок перерасчеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокЗначения" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок значения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекстHTML" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_ДокументЗагружен" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк документ загружен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_ИсходникиЗагружены" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк исходники загружены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_АдресМакета" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк адрес макета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_ВерсияОбработки" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк версия обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоВебКлиент" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это веб клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_КаталогИсходников" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк каталог исходников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_ИндексныйФайл" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк индексный файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="кк_РазделительПути" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кк разделитель пути</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьКонсольКода" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать консоль кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="РаспаковатьИВывести" id="1">
@@ -3257,6 +3689,115 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПреобразоватьТекстВXML</Action>
+		</Command>
+		<Command name="СветлаяТема" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеТемами</Action>
+		</Command>
+		<Command name="ТемнаяТема" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеТемами</Action>
+		</Command>
+		<Command name="ПодсвечиватьЗапросы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсветка синтаксиса языка запросов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить подсветку синтаксиса языка запросов для текущей темы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionConditionalAppearance</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодсвечиватьЗапросы</Action>
+		</Command>
+		<Command name="КартаКода" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображение карты кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение карты кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSourceFunction</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КартаКода</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОтображатьПробелыИТабуляции" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать пробелы и табуляции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение пробелоа и табуляций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldChooseType</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтображатьПробелыИТабуляции</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СтрокаСостояния" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка состояния</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение строки состояния</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтрокаСостояния</Action>
+			<Representation>Picture</Representation>
 		</Command>
 	</Commands>
 	<Parameters>
